@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+| Title: ISSView.html 				                     	|
+| Author: Will McDonald										|
+| Discription: This little html file is for teachers to use.| 
+| Version: 0.01     Date: 01/21/16							|
+< - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<html>
+<head>
+	<title>ISS View</title>
+	<Style>
+		body {
+			margin: 0px;
+			background-color: black;
+		}
+		#container {	
+			height: 100%;
+			width: 1600px;
+			position: relative;
+		}
+		#topHeader {
+			position: relative;
+			width: 100%;
+			height: 3em;
+			background-color: blue;
+
+		}
+		#nasaLogo img {
+			height:	3em;
+			width: 3em;
+		}
+/**
+		#contentWrapper {
+			margin-left: auto;
+			margin-right: auto;
+		}
+**/
+		#view1 {
+			float: left;
+			background-color: white;
+			width: 720px;
+			height: 480px;
+			padding: 1em;
+			border: 1em;
+			border-radius: 25px;
+			margin: .5em;
+		}
+		#view2 {
+			float: right;
+			background-color: red;
+			width: 720px;
+			height: 480px;
+			padding: 1em;
+			border: 1em;
+			border-radius: 25px;
+			position: relative;
+			margin: .5em;
+		}
+	</style>
+</head>
+	<body>
+		<div ID="container">
+			
+			<div ID="topHeader">
+				<div ID="nasaLogo">
+					<img src="http://www.astronautical.org/sites/default/files/attachment/ISS%202013%20Logo.PNG">
+				</div>
+			</div>
+<!-- 
+View one and Position one will be mapped under each other on the left column
+-->
+				<div ID="contentWrapper">
+					<div ID="contentView1">	
+						<div ID="view1">
+							<iframe 
+							width="720" 
+							height="480" 
+							src="http://www.ustream.tv/embed/17074538?html5ui" 
+							allowfullscreen 
+							webkitallowfullscreen 
+							scrolling="no" 
+							frameborder="0" 
+							style="border: 0 none transparent;"
+							>
+							</iframe>
+						</div>
+					
+						<div ID="map1">
+
+						</div>
+
+					</div>
+	<!-- 
+	View two will be here, so far there is one tracker, so I might just throw in an image...
+	-->
+					<div ID="contentView2">
+						<div ID="view2">
+							<iframe 
+							width="720" 
+							height="480" 
+							src="http://www.ustream.tv/embed/9408562?html5ui" 
+							allowfullscreen 
+							webkitallowfullscreen 
+							scrolling="no" 
+							frameborder="0" 
+							style="border: 0 none transparent;"
+							>
+							</iframe>
+						</div>
+					
+						<div ID="map2">
+						</div>
+					</div>	
+				</div>
+		</div>
+	</body>
+</html>
